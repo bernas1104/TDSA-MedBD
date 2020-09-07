@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TDSAMedBDDomain.Models;
+using TDSA_MedBDDomain.Models;
 
-namespace TDSAMedBDDomain.Mappings {
+namespace TDSA_MedBDInfra.Mappings {
   public class DoctorSpecialtyMapping : IEntityTypeConfiguration<DoctorSpecialty> {
     public void Configure(EntityTypeBuilder<DoctorSpecialty> builder) {
       builder.HasKey(x => new { x.DoctorId, x.SpecialtyId });

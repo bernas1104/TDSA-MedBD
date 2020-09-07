@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using TDSAMedBDDomain.Mappings;
-using TDSAMedBDDomain.Models;
+using TDSA_MedBDInfra.Mappings;
+using TDSA_MedBDDomain.Models;
 
-namespace TDSAMedBDDomain.Context {
+namespace TDSA_MedBDInfra.Context {
   public class TDSAMedBDContext : DbContext {
     public DbSet<Doctor> Doctors { get; set; }
     public DbSet<Specialty> Specialties { get; set; }

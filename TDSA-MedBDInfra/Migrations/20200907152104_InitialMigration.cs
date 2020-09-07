@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace TDSA_MedBDDomain.Migrations
+namespace TDSA_MedBDInfra.Migrations
 {
+    [ExcludeFromCodeCoverage]
     public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

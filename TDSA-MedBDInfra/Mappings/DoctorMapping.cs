@@ -1,15 +1,18 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TDSAMedBDDomain.Models;
+using TDSA_MedBDDomain.Models;
 
-namespace TDSAMedBDDomain.Mappings {
-  public class SpecialtyMapping : IEntityTypeConfiguration<Specialty> {
-    public void Configure(EntityTypeBuilder<Specialty> builder) {
+namespace TDSA_MedBDInfra.Mappings {
+  public class DoctorMapping : IEntityTypeConfiguration<Doctor> {
+    public void Configure(EntityTypeBuilder<Doctor> builder) {
       builder.HasKey(x => x.Id);
-      builder.HasAlternateKey(x => x.Name);
+      builder.HasAlternateKey(x => x.Cpf);
+      builder.HasAlternateKey(x => x.Crm);
 
       builder.Property(x => x.Id).UseIdentityColumn();
-      builder.Property(x => x.Name).HasMaxLength(100).IsRequired();
+      builder.Property(x => x.Fullname).HasMaxLength(255).IsRequired();
+      builder.Property(x => x.Cpf).HasMaxLength(11).IsRequired();
+      builder.Property(x => x.Crm).HasMaxLength(50).IsRequired();
       builder.Property(x => x.CreatedAt)
         .HasColumnName("created_at")
         .HasDefaultValueSql("now()")

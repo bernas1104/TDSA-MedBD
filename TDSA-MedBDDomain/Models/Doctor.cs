@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TDSAMedBDDomain.Models {
+namespace TDSA_MedBDDomain.Models {
   public class Doctor {
     public int Id { get; set; }
     public string Fullname { get; set; }

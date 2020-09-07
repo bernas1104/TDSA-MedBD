@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using TDSAMedBDDomain.Context;
+using TDSA_MedBDInfra.Context;
 
-namespace TDSA_MedBDDomain.Migrations
+namespace TDSA_MedBDInfra.Migrations
 {
     [DbContext(typeof(TDSAMedBDContext))]
     [Migration("20200907193024_SeedSpecialty")]

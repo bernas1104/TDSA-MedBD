@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using TDSAMedBDDomain.Context;
+using TDSA_MedBDInfra.Context;
 
-namespace TDSA_MedBDDomain.Migrations
+namespace TDSA_MedBDInfra.Migrations
 {
     [DbContext(typeof(TDSAMedBDContext))]
-    [Migration("20200907192906_UsingIdentityColumns")]
-    partial class UsingIdentityColumns
+    [Migration("20200907152104_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,8 +36,7 @@ namespace TDSA_MedBDDomain.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("created_at")
-                        .HasColumnType("timestamp without time zone")
-                        .HasDefaultValueSql("now()");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Crm")
                         .IsRequired()
@@ -56,8 +55,7 @@ namespace TDSA_MedBDDomain.Migrations
                     b.Property<DateTime>("UpdatedAt")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnName("updated_at")
-                        .HasColumnType("timestamp without time zone")
-                        .HasDefaultValueSql("now()");
+                        .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
 
@@ -93,8 +91,7 @@ namespace TDSA_MedBDDomain.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("created_at")
-                        .HasColumnType("timestamp without time zone")
-                        .HasDefaultValueSql("now()");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnName("deleted_at")
@@ -108,8 +105,7 @@ namespace TDSA_MedBDDomain.Migrations
                     b.Property<DateTime>("UpdatedAt")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnName("updated_at")
-                        .HasColumnType("timestamp without time zone")
-                        .HasDefaultValueSql("now()");
+                        .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
 

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using TDSAMedBDDomain.Context;
+using TDSA_MedBDInfra.Context;
 
 namespace TDSA_MedBDAPI {
   public class Startup {

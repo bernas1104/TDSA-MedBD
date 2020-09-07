@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace TDSA_MedBDDomain.Migrations
+namespace TDSA_MedBDInfra.Migrations
 {
+    [ExcludeFromCodeCoverage]
     public partial class DefaultValuesForDates : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
