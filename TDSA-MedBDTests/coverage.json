@@ -1,0 +1,783 @@
+{
+  "TDSA-MedBDAPI.dll": {
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDAPI/Program.cs": {
+      "TDSA_MedBDAPI.Program": {
+        "System.Void TDSA_MedBDAPI.Program::Main(System.String[])": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder TDSA_MedBDAPI.Program::CreateHostBuilder(System.String[])": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDAPI/Startup.cs": {
+      "TDSA_MedBDAPI.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration TDSA_MedBDAPI.Startup::get_Configuration()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Hosting.IWebHostEnvironment TDSA_MedBDAPI.Startup::get_Environment()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Void TDSA_MedBDAPI.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": []
+        },
+        "System.Void TDSA_MedBDAPI.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 9,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void TDSA_MedBDAPI.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void TDSA_MedBDAPI.Startup::<ConfigureServices>b__9_0(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)": {
+          "Lines": {},
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 14,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 53,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDAPI/ViewModels/CreateDoctorViewModel.cs": {
+      "TDSAMedBDAPI.ViewModels.CreateDoctorViewModel": {
+        "System.String TDSAMedBDAPI.ViewModels.CreateDoctorViewModel::get_Fullname()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String TDSAMedBDAPI.ViewModels.CreateDoctorViewModel::get_Cpf()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TDSAMedBDAPI.ViewModels.CreateDoctorViewModel::get_Crm()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<System.String> TDSAMedBDAPI.ViewModels.CreateDoctorViewModel::get_Specialties()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDAPI/Validators/CreateDoctorViewModelValidator.cs": {
+      "TDSAMedBDAPI.Validators.CreateDoctorViewModelValidator": {
+        "System.Void TDSAMedBDAPI.Validators.CreateDoctorViewModelValidator::.ctor()": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDAPI/Controllers/DoctorsController.cs": {
+      "TDSAMedBDAPI.Controllers.DoctorsController": {
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<System.Int32> TDSAMedBDAPI.Controllers.DoctorsController::Create(TDSAMedBDAPI.Services.Interfaces.IDoctorServices,TDSAMedBDAPI.ViewModels.CreateDoctorViewModel)": {
+          "Lines": {
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "TDSA-MedBDInfra.dll": {},
+  "TDSA-MedBDDomain.dll": {
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Migrations/20200907152104_InitialMigration.cs": {
+      "TDSA_MedBDDomain.Migrations.InitialMigration": {
+        "System.Void TDSA_MedBDDomain.Migrations.InitialMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0
+          },
+          "Branches": []
+        },
+        "System.Void TDSA_MedBDDomain.Migrations.InitialMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 0,
+            "84": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Migrations/20200907152104_InitialMigration.Designer.cs": {
+      "TDSA_MedBDDomain.Migrations.InitialMigration": {
+        "System.Void TDSA_MedBDDomain.Migrations.InitialMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "132": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Migrations/TDSAMedBDContextModelSnapshot.cs": {
+      "TDSA_MedBDDomain.Migrations.TDSAMedBDContextModelSnapshot": {
+        "System.Void TDSA_MedBDDomain.Migrations.TDSAMedBDContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "130": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Models/Doctor.cs": {
+      "TDSAMedBDDomain.Models.Doctor": {
+        "System.Int32 TDSAMedBDDomain.Models.Doctor::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TDSAMedBDDomain.Models.Doctor::get_Fullname()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String TDSAMedBDDomain.Models.Doctor::get_Cpf()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String TDSAMedBDDomain.Models.Doctor::get_Crm()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime TDSAMedBDDomain.Models.Doctor::get_CreatedAt()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime TDSAMedBDDomain.Models.Doctor::get_UpdatedAt()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.DateTime> TDSAMedBDDomain.Models.Doctor::get_DeletedAt()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<TDSAMedBDDomain.Models.DoctorSpecialty> TDSAMedBDDomain.Models.Doctor::get_Specialties()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Models/DoctorSpecialty.cs": {
+      "TDSAMedBDDomain.Models.DoctorSpecialty": {
+        "System.Int32 TDSAMedBDDomain.Models.DoctorSpecialty::get_DoctorId()": {
+          "Lines": {
+            "3": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 TDSAMedBDDomain.Models.DoctorSpecialty::get_SpecialtyId()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "TDSAMedBDDomain.Models.Doctor TDSAMedBDDomain.Models.DoctorSpecialty::get_Doctor()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "TDSAMedBDDomain.Models.Specialty TDSAMedBDDomain.Models.DoctorSpecialty::get_Specialty()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Models/Specialty.cs": {
+      "TDSAMedBDDomain.Models.Specialty": {
+        "System.Int32 TDSAMedBDDomain.Models.Specialty::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String TDSAMedBDDomain.Models.Specialty::get_Name()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime TDSAMedBDDomain.Models.Specialty::get_CreatedAt()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime TDSAMedBDDomain.Models.Specialty::get_UpdatedAt()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.DateTime> TDSAMedBDDomain.Models.Specialty::get_DeletedAt()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<TDSAMedBDDomain.Models.DoctorSpecialty> TDSAMedBDDomain.Models.Specialty::get_Doctors()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Mappings/DoctorMapping.cs": {
+      "TDSAMedBDDomain.Mappings.DoctorMapping": {
+        "System.Void TDSAMedBDDomain.Mappings.DoctorMapping::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<TDSAMedBDDomain.Models.Doctor>)": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Mappings/DoctorSpecialty.cs": {
+      "TDSAMedBDDomain.Mappings.DoctorSpecialtyMapping": {
+        "System.Void TDSAMedBDDomain.Mappings.DoctorSpecialtyMapping::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<TDSAMedBDDomain.Models.DoctorSpecialty>)": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Mappings/SpecialtyMapping.cs": {
+      "TDSAMedBDDomain.Mappings.SpecialtyMapping": {
+        "System.Void TDSAMedBDDomain.Mappings.SpecialtyMapping::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<TDSAMedBDDomain.Models.Specialty>)": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/bernardo/Desktop/TDSA/TDSA-MedBDDomain/Context/TDSAMedBDContext.cs": {
+      "TDSAMedBDDomain.Context.TDSAMedBDContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<TDSAMedBDDomain.Models.Doctor> TDSAMedBDDomain.Context.TDSAMedBDContext::get_Doctors()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<TDSAMedBDDomain.Models.Specialty> TDSAMedBDDomain.Context.TDSAMedBDContext::get_Specialties()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<TDSAMedBDDomain.Models.DoctorSpecialty> TDSAMedBDDomain.Context.TDSAMedBDContext::get_DoctorSpecialties()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Void TDSAMedBDDomain.Context.TDSAMedBDContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.Void TDSAMedBDDomain.Context.TDSAMedBDContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<TDSAMedBDDomain.Context.TDSAMedBDContext>)": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

@@ -10,10 +10,10 @@ namespace TDSAMedBDAPI.Controllers {
     [HttpPost]
     public ActionResult<int> Create(
       [FromServices] IDoctorServices services,
-      [FromBody] DoctorViewModel doctor
+      [FromBody] CreateDoctorViewModel doctor
     ) {
-      // TODO
-      return Ok();
+      var doctor_id = services.RegisterDoctor(doctor);
+      return Ok(doctor_id);
     }
   }
 }

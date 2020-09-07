@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -24,6 +25,12 @@ namespace TDSA_MedBDAPI {
             opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
           if (Environment.IsProduction())
             opt.UseNpgsql(Configuration["DATABASE_URL"]);
+        }
+      );
+
+      services.AddMvc().AddFluentValidation(
+        opt => {
+          opt.RegisterValidatorsFromAssemblyContaining<Startup>();
         }
       );
     }
