@@ -14,4 +14,10 @@
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TDSA-MedBDAPI\TDSA-MedBDAPI.csproj" />
+    <ProjectReference Include="..\TDSA-MedBDInfra\TDSA-MedBDInfra.csproj" />
+    <ProjectReference Include="..\TDSA-MedBDDomain\TDSA-MedBDDomain.csproj" />
+  </ItemGroup>
+
 </Project>
