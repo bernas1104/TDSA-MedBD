@@ -15,6 +15,13 @@ namespace TDSAMedBDDomain.Context {
       builder.ApplyConfiguration(new DoctorMapping());
       builder.ApplyConfiguration(new SpecialtyMapping());
       builder.ApplyConfiguration(new DoctorSpecialtyMapping());
+
+      builder.Entity<Specialty>().HasData(
+        new Specialty {
+          Id = 1,
+          Name = "Clínico Geral",
+        }
+      );
     }
   }
 }

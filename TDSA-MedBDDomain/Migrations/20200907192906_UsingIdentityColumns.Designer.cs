@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using TDSAMedBDDomain.Context;
@@ -9,9 +10,10 @@ using TDSAMedBDDomain.Context;
 namespace TDSA_MedBDDomain.Migrations
 {
     [DbContext(typeof(TDSAMedBDContext))]
-    partial class TDSAMedBDContextModelSnapshot : ModelSnapshot
+    [Migration("20200907192906_UsingIdentityColumns")]
+    partial class UsingIdentityColumns
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -114,15 +116,6 @@ namespace TDSA_MedBDDomain.Migrations
                     b.HasAlternateKey("Name");
 
                     b.ToTable("Specialties");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Clínico Geral",
-                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
                 });
 
             modelBuilder.Entity("TDSAMedBDDomain.Models.DoctorSpecialty", b =>

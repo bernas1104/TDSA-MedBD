@@ -9,14 +9,17 @@ namespace TDSAMedBDDomain.Mappings {
       builder.HasAlternateKey(x => x.Cpf);
       builder.HasAlternateKey(x => x.Crm);
 
+      builder.Property(x => x.Id).UseIdentityColumn();
       builder.Property(x => x.Fullname).HasMaxLength(255).IsRequired();
       builder.Property(x => x.Cpf).HasMaxLength(11).IsRequired();
       builder.Property(x => x.Crm).HasMaxLength(50).IsRequired();
       builder.Property(x => x.CreatedAt)
         .HasColumnName("created_at")
+        .HasDefaultValueSql("now()")
         .ValueGeneratedOnAdd();
       builder.Property(x => x.UpdatedAt)
         .HasColumnName("updated_at")
+        .HasDefaultValueSql("now()")
         .ValueGeneratedOnAddOrUpdate();
       builder.Property(x => x.DeletedAt)
         .HasColumnName("deleted_at")

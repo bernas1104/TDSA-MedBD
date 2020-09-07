@@ -8,12 +8,15 @@ namespace TDSAMedBDDomain.Mappings {
       builder.HasKey(x => x.Id);
       builder.HasAlternateKey(x => x.Name);
 
+      builder.Property(x => x.Id).UseIdentityColumn();
       builder.Property(x => x.Name).HasMaxLength(100).IsRequired();
       builder.Property(x => x.CreatedAt)
         .HasColumnName("created_at")
+        .HasDefaultValueSql("now()")
         .ValueGeneratedOnAdd();
       builder.Property(x => x.UpdatedAt)
         .HasColumnName("updated_at")
+        .HasDefaultValueSql("now()")
         .ValueGeneratedOnAddOrUpdate();
       builder.Property(x => x.DeletedAt)
         .HasColumnName("deleted_at")
