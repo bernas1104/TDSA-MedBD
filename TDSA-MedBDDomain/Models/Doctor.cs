@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TDSAMedBDDomain.Models {
   public class Doctor {
-    public string Id { get; set; }
+    public int Id { get; set; }
     public string Fullname { get; set; }
     public string Cpf { get; set; }
     public string Crm { get; set; }

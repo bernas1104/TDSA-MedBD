@@ -10,7 +10,7 @@ using TDSAMedBDDomain.Context;
 namespace TDSA_MedBDDomain.Migrations
 {
     [DbContext(typeof(TDSAMedBDContext))]
-    [Migration("20200907145915_InitialMigration")]
+    [Migration("20200907152104_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,8 +23,10 @@ namespace TDSA_MedBDDomain.Migrations
 
             modelBuilder.Entity("TDSAMedBDDomain.Models.Doctor", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("text");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("Cpf")
                         .IsRequired()
@@ -66,11 +68,11 @@ namespace TDSA_MedBDDomain.Migrations
 
             modelBuilder.Entity("TDSAMedBDDomain.Models.DoctorSpecialty", b =>
                 {
-                    b.Property<string>("DoctorId")
-                        .HasColumnType("text");
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("integer");
 
-                    b.Property<string>("SpecialtyId")
-                        .HasColumnType("text");
+                    b.Property<int>("SpecialtyId")
+                        .HasColumnType("integer");
 
                     b.HasKey("DoctorId", "SpecialtyId");
 
@@ -81,8 +83,10 @@ namespace TDSA_MedBDDomain.Migrations
 
             modelBuilder.Entity("TDSAMedBDDomain.Models.Specialty", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("text");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()

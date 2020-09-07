@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace TDSA_MedBDDomain.Migrations
 {
@@ -11,7 +12,8 @@ namespace TDSA_MedBDDomain.Migrations
                 name: "Doctors",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Fullname = table.Column<string>(maxLength: 255, nullable: false),
                     Cpf = table.Column<string>(maxLength: 11, nullable: false),
                     Crm = table.Column<string>(maxLength: 50, nullable: false),
@@ -30,7 +32,8 @@ namespace TDSA_MedBDDomain.Migrations
                 name: "Specialties",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(maxLength: 100, nullable: false),
                     created_at = table.Column<DateTime>(nullable: false),
                     updated_at = table.Column<DateTime>(nullable: false),
@@ -46,8 +49,8 @@ namespace TDSA_MedBDDomain.Migrations
                 name: "DoctorSpecialties",
                 columns: table => new
                 {
-                    DoctorId = table.Column<string>(nullable: false),
-                    SpecialtyId = table.Column<string>(nullable: false)
+                    DoctorId = table.Column<int>(nullable: false),
+                    SpecialtyId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
