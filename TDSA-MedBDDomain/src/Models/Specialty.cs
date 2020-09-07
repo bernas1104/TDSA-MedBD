@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace TDSAMedBDDomain.Models {
   public class Specialty {
@@ -7,5 +8,7 @@ namespace TDSAMedBDDomain.Models {
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
     public DateTime? DeletedAt { get; set; }
+
+    public ICollection<DoctorSpecialty> Doctors { get; set; }
   }
 }

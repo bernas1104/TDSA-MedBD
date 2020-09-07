@@ -1,0 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using TDSAMedBDDomain.Models;
+
+namespace TDSAMedBDDomain.Mappings {
+  public class DoctorMapping : IEntityTypeConfiguration<Doctor> {
+    public void Configure(EntityTypeBuilder<Doctor> builder) {
+      builder.HasKey(x => x.Id);
+      builder.HasAlternateKey(x => x.Cpf);
+      builder.HasAlternateKey(x => x.Crm);
+
+      builder.Property(x => x.Fullname).HasMaxLength(255).IsRequired();
+      builder.Property(x => x.Cpf).HasMaxLength(11).IsRequired();
+      builder.Property(x => x.Crm).HasMaxLength(50).IsRequired();
+      builder.Property(x => x.CreatedAt)
+        .HasColumnName("created_at")
+        .ValueGeneratedOnAdd();
+      builder.Property(x => x.UpdatedAt)
+        .HasColumnName("updated_at")
+        .ValueGeneratedOnAddOrUpdate();
+      builder.Property(x => x.DeletedAt)
+        .HasColumnName("deleted_at")
+        .IsRequired(false);
+    }
+  }
+}
