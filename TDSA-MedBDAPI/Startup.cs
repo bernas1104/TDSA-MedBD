@@ -30,11 +30,17 @@ namespace TDSA_MedBDAPI {
         }
       );
 
-      services.AddMvc().AddFluentValidation(
-        opt => {
-          opt.RegisterValidatorsFromAssemblyContaining<Startup>();
-        }
-      );
+      services
+        .AddMvc()
+        .AddNewtonsoftJson(
+          opt => opt.SerializerSettings.ReferenceLoopHandling =
+            Newtonsoft.Json.ReferenceLoopHandling.Ignore
+          )
+        .AddFluentValidation(
+          opt => {
+            opt.RegisterValidatorsFromAssemblyContaining<Startup>();
+          }
+        );
 
       services.ResolveDependencies();
       services.AddAutoMapper(typeof(Startup));

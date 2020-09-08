@@ -8,10 +8,10 @@ namespace TDSA_MedBDInfra.Mappings {
       builder.HasKey(x => new { x.DoctorId, x.SpecialtyId });
 
       builder.HasOne(x => x.Doctor)
-        .WithMany(x => x.Specialties)
+        .WithMany(x => x.DoctorSpecialties)
         .HasForeignKey(x => x.DoctorId);
       builder.HasOne(x => x.Specialty)
-        .WithMany(x => x.Doctors)
+        .WithMany(x => x.DoctorSpecialties)
         .HasForeignKey(x => x.SpecialtyId);
     }
   }

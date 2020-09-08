@@ -11,6 +11,6 @@ namespace TDSA_MedBDDomain.Models {
     public DateTime UpdatedAt { get; set; }
     public DateTime? DeletedAt { get; set; }
 
-    public ICollection<DoctorSpecialty> Specialties { get; set; }
+    public virtual IList<DoctorSpecialty> DoctorSpecialties { get; set; }
   }
 }

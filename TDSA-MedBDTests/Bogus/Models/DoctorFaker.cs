@@ -12,5 +12,14 @@ namespace TDSA_MedBDTest.Bogus.Models {
 
       return doctor.Generate();
     }
+
+    public static Doctor Generate(string cpf, string crm) {
+      var doctor = new Faker<Doctor>()
+        .RuleFor(x => x.Fullname, (f) => f.Person.FullName)
+        .RuleFor(x => x.Cpf, () => cpf)
+        .RuleFor(x => x.Crm, () => crm);
+
+      return doctor.Generate();
+    }
   }
 }

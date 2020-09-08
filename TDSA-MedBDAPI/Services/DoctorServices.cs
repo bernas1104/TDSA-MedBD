@@ -24,9 +24,13 @@ namespace TDSA_MedBDAPI.Services {
       this.mapper = mapper;
     }
 
+    public IList<DoctorViewModel> ListDoctors() {
+      return mapper.Map<IList<DoctorViewModel>>(doctorsRepository.FindAll());
+    }
+
     public int RegisterDoctor(CreateDoctorViewModel doctor) {
       var model = mapper.Map<Doctor>(doctor);
-      model.Specialties = new List<DoctorSpecialty>();
+      model.DoctorSpecialties = new List<DoctorSpecialty>();
 
       var validation = new DoctorInsertValidation(doctorsRepository)
         .Validate(model);
@@ -43,7 +47,7 @@ namespace TDSA_MedBDAPI.Services {
         if (addingSpecialty == null)
           throw new AppException("Especialidade não encontrada", 404, null);
 
-        model.Specialties.Add(new DoctorSpecialty {
+        model.DoctorSpecialties.Add(new DoctorSpecialty {
           Specialty = addingSpecialty,
           SpecialtyId = addingSpecialty.Id,
           Doctor = model,

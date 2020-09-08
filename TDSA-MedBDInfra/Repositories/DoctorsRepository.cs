@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -11,10 +10,6 @@ namespace TDSA_MedBDInfra.Repositories {
   : EntityBaseRepository<Doctor>, IDoctorsRepository {
     public DoctorsRepository(TDSAMedBDContext context) : base(context) {}
 
-    public Doctor FindById(int id) {
-      return DbSet.AsNoTracking().FirstOrDefault(x => x.Id == id);
-    }
-
     public Doctor FindByCpf(string cpf) {
       return DbSet.AsNoTracking().FirstOrDefault(x => x.Cpf == cpf);
     }
@@ -24,7 +19,10 @@ namespace TDSA_MedBDInfra.Repositories {
     }
 
     public IEnumerable<Doctor> FindAll() {
-      throw new NotImplementedException();
+      return DbSet.AsNoTracking()
+        .Include(x => x.DoctorSpecialties)
+        .ThenInclude(y => y.Specialty)
+        .ToList();
     }
   }
 }

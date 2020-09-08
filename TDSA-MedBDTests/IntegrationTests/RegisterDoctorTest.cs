@@ -70,7 +70,7 @@ namespace TDSA_MedBDTest.IntegrationTests {
     public async Task Should_Return_404_Status_Code_If_Any_Specialty_Does_Not_Exist() {
       var client = factory.CreateClient();
 
-      var data = CreateDoctorViewModelFaker.Generate("3-DF", "48315415085");
+      var data = CreateDoctorViewModelFaker.Generate("1-AC", "48315415085");
       data.Specialties = new List<string>() { "Lorem Ipsum" };
 
       var response = await factory.PerformRequest(new PerformRequestDTO {

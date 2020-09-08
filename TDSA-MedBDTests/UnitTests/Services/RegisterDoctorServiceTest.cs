@@ -11,13 +11,13 @@ using TDSA_MedBDTest.Bogus.ViewModels;
 using Xunit;
 
 namespace TDSA_MedBDTest.UnitTests.Services {
-  public class DoctorServicesTest {
+  public class RegisterDoctorServiceTest {
     private readonly Mock<IDoctorsRepository> doctorsRepository;
     private readonly Mock<ISpecialtiesRepository> specialtiesRepository;
     private readonly Mock<IMapper> mapper;
     private readonly IDoctorServices doctorServices;
 
-    public DoctorServicesTest() {
+    public RegisterDoctorServiceTest() {
       doctorsRepository = new Mock<IDoctorsRepository>();
       specialtiesRepository = new Mock<ISpecialtiesRepository>();
       mapper = new Mock<IMapper>();
