@@ -12,11 +12,11 @@
         },
         "Microsoft.Extensions.Hosting.IHostBuilder TDSA_MedBDAPI.Program::CreateHostBuilder(System.String[])": {
           "Lines": {
-            "20": 2,
-            "21": 2,
-            "22": 4,
-            "23": 4,
-            "24": 4
+            "20": 3,
+            "21": 3,
+            "22": 6,
+            "23": 6,
+            "24": 6
           },
           "Branches": []
         }
@@ -38,44 +38,44 @@
         },
         "System.Void TDSA_MedBDAPI.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
           "Lines": {
-            "23": 2,
-            "24": 2,
+            "23": 3,
+            "24": 3,
             "25": 0,
             "26": 0,
             "27": 0,
             "28": 0,
             "29": 0,
             "30": 0,
-            "31": 2,
-            "33": 2,
-            "34": 2,
-            "35": 2,
-            "36": 4,
-            "37": 4,
-            "38": 2,
-            "39": 2,
-            "40": 4,
-            "41": 4,
-            "42": 4,
-            "43": 2,
-            "45": 2,
-            "46": 2,
-            "47": 2
+            "31": 3,
+            "33": 3,
+            "34": 3,
+            "35": 3,
+            "36": 6,
+            "37": 6,
+            "38": 3,
+            "39": 3,
+            "40": 6,
+            "41": 6,
+            "42": 6,
+            "43": 3,
+            "45": 3,
+            "46": 3,
+            "47": 3
           },
           "Branches": []
         },
         "System.Void TDSA_MedBDAPI.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
           "Lines": {
-            "49": 2,
-            "50": 4,
-            "51": 2,
-            "52": 2,
-            "54": 2,
-            "56": 2,
-            "58": 4,
-            "59": 4,
-            "60": 4,
-            "61": 2
+            "49": 3,
+            "50": 6,
+            "51": 3,
+            "52": 3,
+            "54": 3,
+            "56": 3,
+            "58": 6,
+            "59": 6,
+            "60": 6,
+            "61": 3
           },
           "Branches": [
             {
@@ -84,7 +84,7 @@
               "EndOffset": 11,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 2
+              "Hits": 3
             },
             {
               "Line": 50,
@@ -92,16 +92,16 @@
               "EndOffset": 20,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 2
+              "Hits": 3
             }
           ]
         },
         "System.Void TDSA_MedBDAPI.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
           "Lines": {
-            "18": 4,
-            "19": 2,
-            "20": 2,
-            "21": 2
+            "18": 6,
+            "19": 3,
+            "20": 3,
+            "21": 3
           },
           "Branches": []
         },
@@ -176,31 +176,31 @@
       "TDSA_MedBDAPI.ViewModels.DoctorViewModel": {
         "System.Int32 TDSA_MedBDAPI.ViewModels.DoctorViewModel::get_Id()": {
           "Lines": {
-            "6": 20
+            "6": 18
           },
           "Branches": []
         },
         "System.String TDSA_MedBDAPI.ViewModels.DoctorViewModel::get_Fullname()": {
           "Lines": {
-            "7": 22
+            "7": 19
           },
           "Branches": []
         },
         "System.String TDSA_MedBDAPI.ViewModels.DoctorViewModel::get_Cpf()": {
           "Lines": {
-            "8": 22
+            "8": 19
           },
           "Branches": []
         },
         "System.String TDSA_MedBDAPI.ViewModels.DoctorViewModel::get_Crm()": {
           "Lines": {
-            "9": 22
+            "9": 19
           },
           "Branches": []
         },
         "System.Collections.Generic.ICollection`1<System.String> TDSA_MedBDAPI.ViewModels.DoctorViewModel::get_DoctorSpecialties()": {
           "Lines": {
-            "10": 22
+            "10": 19
           },
           "Branches": []
         }
@@ -357,41 +357,41 @@
       "TDSA_MedBDAPI.Services.DoctorServices": {
         "System.Collections.Generic.IList`1<TDSA_MedBDAPI.ViewModels.DoctorViewModel> TDSA_MedBDAPI.Services.DoctorServices::ListDoctors()": {
           "Lines": {
-            "27": 2,
             "28": 2,
-            "29": 2
+            "29": 2,
+            "30": 2
           },
           "Branches": []
         },
         "System.Int32 TDSA_MedBDAPI.Services.DoctorServices::RegisterDoctor(TDSA_MedBDAPI.ViewModels.CreateDoctorViewModel)": {
           "Lines": {
-            "31": 7,
             "32": 7,
             "33": 7,
-            "35": 7,
+            "34": 7,
             "36": 7,
-            "38": 7,
-            "39": 3,
-            "41": 4,
-            "43": 4,
-            "44": 22,
-            "45": 4,
-            "47": 4,
-            "48": 2,
-            "50": 2,
+            "37": 7,
+            "39": 7,
+            "40": 3,
+            "42": 4,
+            "44": 4,
+            "45": 22,
+            "46": 4,
+            "48": 4,
+            "49": 2,
             "51": 2,
             "52": 2,
             "53": 2,
             "54": 2,
             "55": 2,
             "56": 2,
-            "58": 2,
-            "60": 2,
-            "61": 2
+            "57": 2,
+            "59": 2,
+            "61": 2,
+            "62": 2
           },
           "Branches": [
             {
-              "Line": 38,
+              "Line": 39,
               "Offset": 55,
               "EndOffset": 57,
               "Path": 0,
@@ -399,7 +399,7 @@
               "Hits": 3
             },
             {
-              "Line": 38,
+              "Line": 39,
               "Offset": 55,
               "EndOffset": 70,
               "Path": 1,
@@ -407,7 +407,7 @@
               "Hits": 4
             },
             {
-              "Line": 44,
+              "Line": 45,
               "Offset": 227,
               "EndOffset": 105,
               "Path": 1,
@@ -415,7 +415,7 @@
               "Hits": 4
             },
             {
-              "Line": 47,
+              "Line": 48,
               "Offset": 139,
               "EndOffset": 141,
               "Path": 0,
@@ -423,7 +423,7 @@
               "Hits": 2
             },
             {
-              "Line": 47,
+              "Line": 48,
               "Offset": 139,
               "EndOffset": 158,
               "Path": 1,
@@ -431,7 +431,7 @@
               "Hits": 2
             },
             {
-              "Line": 44,
+              "Line": 45,
               "Offset": 227,
               "EndOffset": 229,
               "Path": 0,
@@ -440,21 +440,70 @@
             }
           ]
         },
-        "System.Void TDSA_MedBDAPI.Services.DoctorServices::HandleModelValidationError(System.Collections.Generic.IList`1<FluentValidation.Results.ValidationFailure>)": {
+        "System.Int32 TDSA_MedBDAPI.Services.DoctorServices::DeleteDoctor(System.Int32)": {
           "Lines": {
-            "63": 3,
-            "64": 3,
-            "66": 18,
-            "67": 3,
-            "68": 3,
-            "69": 3,
-            "70": 3,
-            "71": 3,
-            "73": 3
+            "64": 6,
+            "65": 6,
+            "66": 6,
+            "67": 2,
+            "69": 4,
+            "70": 2,
+            "72": 2,
+            "74": 2,
+            "75": 2,
+            "77": 2,
+            "78": 2
           },
           "Branches": [
             {
               "Line": 66,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 66,
+              "Offset": 20,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 69,
+              "Offset": 55,
+              "EndOffset": 57,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 69,
+              "Offset": 55,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void TDSA_MedBDAPI.Services.DoctorServices::HandleModelValidationError(System.Collections.Generic.IList`1<FluentValidation.Results.ValidationFailure>)": {
+          "Lines": {
+            "80": 3,
+            "81": 3,
+            "83": 18,
+            "84": 3,
+            "85": 3,
+            "86": 3,
+            "87": 3,
+            "88": 3,
+            "90": 3
+          },
+          "Branches": [
+            {
+              "Line": 83,
               "Offset": 56,
               "EndOffset": 17,
               "Path": 1,
@@ -462,7 +511,7 @@
               "Hits": 3
             },
             {
-              "Line": 66,
+              "Line": 83,
               "Offset": 56,
               "EndOffset": 58,
               "Path": 0,
@@ -473,15 +522,15 @@
         },
         "System.Void TDSA_MedBDAPI.Services.DoctorServices::.ctor(TDSA_MedBDDomain.Interfaces.Repositories.IDoctorsRepository,TDSA_MedBDDomain.Interfaces.Repositories.ISpecialtiesRepository,AutoMapper.IMapper)": {
           "Lines": {
-            "17": 10,
-            "18": 10,
-            "19": 10,
-            "20": 10,
-            "21": 20,
-            "22": 10,
-            "23": 10,
-            "24": 10,
-            "25": 10
+            "18": 16,
+            "19": 16,
+            "20": 16,
+            "21": 16,
+            "22": 32,
+            "23": 16,
+            "24": 16,
+            "25": 16,
+            "26": 16
           },
           "Branches": []
         }
@@ -491,16 +540,16 @@
       "TDSA_MedBDAPI.Middlewares.ExceptionMiddleware": {
         "System.String TDSA_MedBDAPI.Middlewares.ExceptionMiddleware::HandleAppException(Microsoft.AspNetCore.Http.HttpContext,TDSA_MedBDAPI.Exceptions.AppException)": {
           "Lines": {
-            "31": 2,
-            "32": 2,
-            "34": 2,
-            "35": 2,
-            "36": 2,
-            "37": 2,
-            "38": 2,
-            "40": 2,
-            "42": 2,
-            "43": 2
+            "31": 4,
+            "32": 4,
+            "34": 4,
+            "35": 4,
+            "36": 4,
+            "37": 4,
+            "38": 4,
+            "40": 4,
+            "42": 4,
+            "43": 4
           },
           "Branches": []
         },
@@ -537,19 +586,19 @@
         },
         "System.Threading.Tasks.Task TDSA_MedBDAPI.Middlewares.ExceptionMiddleware::HandleResponse(Microsoft.AspNetCore.Http.HttpContext,System.String)": {
           "Lines": {
-            "57": 2,
-            "58": 2,
-            "60": 2,
-            "61": 2
+            "57": 4,
+            "58": 4,
+            "60": 4,
+            "61": 4
           },
           "Branches": []
         },
         "System.Void TDSA_MedBDAPI.Middlewares.ExceptionMiddleware::.ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
           "Lines": {
-            "13": 5,
-            "15": 10,
-            "16": 5,
-            "17": 5
+            "13": 8,
+            "15": 16,
+            "16": 8,
+            "17": 8
           },
           "Branches": []
         }
@@ -557,17 +606,17 @@
       "TDSA_MedBDAPI.Middlewares.ExceptionMiddleware/<InvokeAsync>d__3": {
         "System.Void TDSA_MedBDAPI.Middlewares.ExceptionMiddleware/<InvokeAsync>d__3::MoveNext()": {
           "Lines": {
-            "19": 5,
-            "20": 5,
-            "21": 5,
-            "22": 7,
-            "23": 2,
-            "24": 2,
+            "19": 8,
+            "20": 8,
+            "21": 8,
+            "22": 12,
+            "23": 4,
+            "24": 4,
             "25": 0,
             "26": 0,
             "27": 0,
             "28": 0,
-            "29": 5
+            "29": 8
           },
           "Branches": []
         }
@@ -577,22 +626,22 @@
       "TDSA_MedBDAPI.Exceptions.AppException": {
         "System.Int32 TDSA_MedBDAPI.Exceptions.AppException::get_StatusCode()": {
           "Lines": {
-            "7": 7
+            "7": 13
           },
           "Branches": []
         },
         "System.Collections.Generic.IList`1<System.Object> TDSA_MedBDAPI.Exceptions.AppException::get_Errors()": {
           "Lines": {
-            "8": 7
+            "8": 13
           },
           "Branches": []
         },
         "System.Void TDSA_MedBDAPI.Exceptions.AppException::.ctor(System.String,System.Int32,System.Collections.Generic.IList`1<System.Object>)": {
           "Lines": {
-            "14": 10,
-            "15": 5,
-            "16": 5,
-            "17": 5
+            "14": 18,
+            "15": 9,
+            "16": 9,
+            "17": 9
           },
           "Branches": []
         }
@@ -636,6 +685,15 @@
             "32": 2
           },
           "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.ActionResult TDSA_MedBDAPI.Controllers.DoctorsController::Delete(TDSA_MedBDAPI.Services.Interfaces.IDoctorServices,System.Int32)": {
+          "Lines": {
+            "36": 4,
+            "37": 4,
+            "38": 2,
+            "39": 2
+          },
+          "Branches": []
         }
       }
     },
@@ -643,16 +701,16 @@
       "TDSA_MedBDAPI.Configurations.AutoMapperConfiguration": {
         "System.Void TDSA_MedBDAPI.Configurations.AutoMapperConfiguration::.ctor()": {
           "Lines": {
-            "9": 4,
-            "10": 2,
-            "11": 4,
-            "12": 2,
-            "13": 2,
-            "14": 4,
-            "15": 4,
-            "16": 4,
-            "17": 2,
-            "18": 2
+            "9": 6,
+            "10": 3,
+            "11": 6,
+            "12": 3,
+            "13": 3,
+            "14": 6,
+            "15": 6,
+            "16": 6,
+            "17": 3,
+            "18": 3
           },
           "Branches": []
         }
@@ -662,13 +720,13 @@
       "TDSA_MedBDAPI.Configurations.DependencyInjection": {
         "Microsoft.Extensions.DependencyInjection.IServiceCollection TDSA_MedBDAPI.Configurations.DependencyInjection::ResolveDependencies(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
           "Lines": {
-            "13": 2,
-            "14": 2,
-            "15": 2,
-            "17": 2,
-            "19": 2,
-            "21": 2,
-            "22": 2
+            "13": 3,
+            "14": 3,
+            "15": 3,
+            "17": 3,
+            "19": 3,
+            "21": 3,
+            "22": 3
           },
           "Branches": []
         }
@@ -678,7 +736,7 @@
   "TDSA-MedBDInfra.dll": {
     "/home/bernardo/Desktop/TDSA/TDSA-MedBDInfra/Repositories/DoctorsRepository.cs": {
       "TDSA_MedBDInfra.Repositories.DoctorsRepository": {
-        "TDSA_MedBDDomain.Models.Doctor TDSA_MedBDInfra.Repositories.DoctorsRepository::FindByCpf(System.String)": {
+        "TDSA_MedBDDomain.Models.Doctor TDSA_MedBDInfra.Repositories.DoctorsRepository::FindById(System.Int32)": {
           "Lines": {
             "13": 3,
             "14": 3,
@@ -686,7 +744,7 @@
           },
           "Branches": []
         },
-        "TDSA_MedBDDomain.Models.Doctor TDSA_MedBDInfra.Repositories.DoctorsRepository::FindByCrm(System.String)": {
+        "TDSA_MedBDDomain.Models.Doctor TDSA_MedBDInfra.Repositories.DoctorsRepository::FindByCpf(System.String)": {
           "Lines": {
             "17": 3,
             "18": 3,
@@ -694,20 +752,29 @@
           },
           "Branches": []
         },
+        "TDSA_MedBDDomain.Models.Doctor TDSA_MedBDInfra.Repositories.DoctorsRepository::FindByCrm(System.String)": {
+          "Lines": {
+            "21": 3,
+            "22": 3,
+            "23": 3
+          },
+          "Branches": []
+        },
         "System.Collections.Generic.IEnumerable`1<TDSA_MedBDDomain.Models.Doctor> TDSA_MedBDInfra.Repositories.DoctorsRepository::FindAll()": {
           "Lines": {
-            "21": 1,
-            "22": 1,
-            "23": 1,
-            "24": 1,
             "25": 1,
-            "26": 1
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1
           },
           "Branches": []
         },
         "System.Void TDSA_MedBDInfra.Repositories.DoctorsRepository::.ctor(TDSA_MedBDInfra.Context.TDSAMedBDContext)": {
           "Lines": {
-            "11": 15
+            "11": 24
           },
           "Branches": []
         }
@@ -725,35 +792,35 @@
         },
         "System.Void TDSA_MedBDInfra.Repositories.EntityBaseRepository`1::Update(TEntity)": {
           "Lines": {
-            "21": 0,
-            "22": 0,
-            "23": 0
+            "21": 1,
+            "22": 1,
+            "23": 1
           },
           "Branches": []
         },
         "System.Void TDSA_MedBDInfra.Repositories.EntityBaseRepository`1::Save()": {
           "Lines": {
-            "25": 1,
-            "26": 1,
-            "27": 1
+            "25": 2,
+            "26": 2,
+            "27": 2
           },
           "Branches": []
         },
         "System.Void TDSA_MedBDInfra.Repositories.EntityBaseRepository`1::Dispose()": {
           "Lines": {
-            "29": 10,
-            "30": 10,
-            "31": 10,
-            "32": 10
+            "29": 16,
+            "30": 16,
+            "31": 16,
+            "32": 16
           },
           "Branches": []
         },
         "System.Void TDSA_MedBDInfra.Repositories.EntityBaseRepository`1::.ctor(TDSA_MedBDInfra.Context.TDSAMedBDContext)": {
           "Lines": {
-            "12": 20,
-            "13": 10,
-            "14": 10,
-            "15": 10
+            "12": 32,
+            "13": 16,
+            "14": 16,
+            "15": 16
           },
           "Branches": []
         }
@@ -771,7 +838,7 @@
         },
         "System.Void TDSA_MedBDInfra.Repositories.SpecialtiesRepository::.ctor(TDSA_MedBDInfra.Context.TDSAMedBDContext)": {
           "Lines": {
-            "10": 15
+            "10": 24
           },
           "Branches": []
         }
@@ -854,7 +921,7 @@
       "TDSA_MedBDInfra.Context.TDSAMedBDContext": {
         "Microsoft.EntityFrameworkCore.DbSet`1<TDSA_MedBDDomain.Models.Doctor> TDSA_MedBDInfra.Context.TDSAMedBDContext::get_Doctors()": {
           "Lines": {
-            "7": 27
+            "7": 41
           },
           "Branches": []
         },
@@ -888,7 +955,7 @@
         },
         "System.Void TDSA_MedBDInfra.Context.TDSAMedBDContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<TDSA_MedBDInfra.Context.TDSAMedBDContext>)": {
           "Lines": {
-            "12": 21
+            "12": 33
           },
           "Branches": []
         }
@@ -938,25 +1005,25 @@
       "TDSA_MedBDDomain.Models.Doctor": {
         "System.Int32 TDSA_MedBDDomain.Models.Doctor::get_Id()": {
           "Lines": {
-            "6": 38
+            "6": 50
           },
           "Branches": []
         },
         "System.String TDSA_MedBDDomain.Models.Doctor::get_Fullname()": {
           "Lines": {
-            "7": 41
+            "7": 50
           },
           "Branches": []
         },
         "System.String TDSA_MedBDDomain.Models.Doctor::get_Cpf()": {
           "Lines": {
-            "8": 56
+            "8": 65
           },
           "Branches": []
         },
         "System.String TDSA_MedBDDomain.Models.Doctor::get_Crm()": {
           "Lines": {
-            "9": 54
+            "9": 63
           },
           "Branches": []
         },
@@ -974,13 +1041,13 @@
         },
         "System.Nullable`1<System.DateTime> TDSA_MedBDDomain.Models.Doctor::get_DeletedAt()": {
           "Lines": {
-            "12": 0
+            "12": 10
           },
           "Branches": []
         },
         "System.Collections.Generic.IList`1<TDSA_MedBDDomain.Models.DoctorSpecialty> TDSA_MedBDDomain.Models.Doctor::get_DoctorSpecialties()": {
           "Lines": {
-            "14": 39
+            "14": 48
           },
           "Branches": []
         }
@@ -1008,7 +1075,7 @@
         },
         "TDSA_MedBDDomain.Models.Specialty TDSA_MedBDDomain.Models.DoctorSpecialty::get_Specialty()": {
           "Lines": {
-            "7": 12
+            "7": 11
           },
           "Branches": []
         }
@@ -1018,13 +1085,13 @@
       "TDSA_MedBDDomain.Models.Specialty": {
         "System.Int32 TDSA_MedBDDomain.Models.Specialty::get_Id()": {
           "Lines": {
-            "6": 10
+            "6": 12
           },
           "Branches": []
         },
         "System.String TDSA_MedBDDomain.Models.Specialty::get_Name()": {
           "Lines": {
-            "7": 18
+            "7": 19
           },
           "Branches": []
         },

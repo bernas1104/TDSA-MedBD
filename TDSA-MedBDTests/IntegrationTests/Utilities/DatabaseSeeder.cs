@@ -28,7 +28,7 @@ namespace TDSA_MedBDTest.IntegrationTests.Utilities {
       );
 
       for(var i = 1; i <= doctorCpfs.Count; i++) {
-        dbContext.Doctors.Add(new Doctor {
+        var doctor = new Doctor {
           Id = i,
           Fullname = "John Doe",
           Cpf = doctorCpfs[i-1],
@@ -39,7 +39,11 @@ namespace TDSA_MedBDTest.IntegrationTests.Utilities {
               SpecialtyId = i % 3 != 0 ? (i % 3) : 3,
             }
           }
-        });
+        };
+
+        if (i == 9) doctor.DeletedAt = DateTime.Now;
+
+        dbContext.Doctors.Add(doctor);
       }
 
       dbContext.SaveChanges();
