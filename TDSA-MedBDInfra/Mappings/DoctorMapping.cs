@@ -9,7 +9,7 @@ namespace TDSA_MedBDInfra.Mappings {
       builder.HasAlternateKey(x => x.Cpf);
       builder.HasAlternateKey(x => x.Crm);
 
-      builder.Property(x => x.Id).HasColumnType("uuid").UseIdentityColumn();
+      builder.Property(x => x.Id).UseIdentityColumn();
       builder.Property(x => x.Fullname).HasMaxLength(255).IsRequired();
       builder.Property(x => x.Cpf).HasMaxLength(11).IsRequired();
       builder.Property(x => x.Crm).HasMaxLength(50).IsRequired();

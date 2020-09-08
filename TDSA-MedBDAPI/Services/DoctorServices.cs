@@ -28,7 +28,7 @@ namespace TDSA_MedBDAPI.Services {
       return mapper.Map<IList<DoctorViewModel>>(doctorsRepository.FindAll());
     }
 
-    public string RegisterDoctor(CreateDoctorViewModel doctor) {
+    public int RegisterDoctor(CreateDoctorViewModel doctor) {
       var model = mapper.Map<Doctor>(doctor);
       model.DoctorSpecialties = new List<DoctorSpecialty>();
 

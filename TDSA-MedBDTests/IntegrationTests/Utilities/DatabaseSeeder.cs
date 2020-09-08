@@ -16,33 +16,27 @@ namespace TDSA_MedBDTest.IntegrationTests.Utilities {
         "7-DF", "8-DF", "9-DF", "10-DF", "11-DF"
       };
 
-      IList<string> specialtiesIds = new List<string>() {
-        Guid.NewGuid().ToString(),
-        Guid.NewGuid().ToString()
-      };
-
       dbContext.AddRange(
         new Specialty {
-          Id = specialtiesIds[0],
+          Id = 2,
           Name = "Dermatologista"
         },
         new Specialty {
-          Id = specialtiesIds[1],
+          Id = 3,
           Name = "Psiquiatra"
         }
       );
 
       for(var i = 1; i <= doctorCpfs.Count; i++) {
-        var id = Guid.NewGuid().ToString();
         dbContext.Doctors.Add(new Doctor {
-          Id = id,
+          Id = i,
           Fullname = "John Doe",
           Cpf = doctorCpfs[i-1],
           Crm = doctorCrms[i-1],
           DoctorSpecialties = new List<DoctorSpecialty>() {
             new DoctorSpecialty {
-              DoctorId = id,
-              SpecialtyId = specialtiesIds[i % 2],
+              DoctorId = i,
+              SpecialtyId = i % 3 != 0 ? (i % 3) : 3,
             }
           }
         });

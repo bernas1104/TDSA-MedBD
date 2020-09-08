@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TDSA_MedBDInfra.Mappings;
 using TDSA_MedBDDomain.Models;
-using System;
 
 namespace TDSA_MedBDInfra.Context {
   public class TDSAMedBDContext : DbContext {
@@ -19,7 +18,7 @@ namespace TDSA_MedBDInfra.Context {
 
       builder.Entity<Specialty>().HasData(
         new Specialty {
-          Id = Guid.NewGuid().ToString(),
+          Id = 1,
           Name = "Clínico Geral",
         }
       );
