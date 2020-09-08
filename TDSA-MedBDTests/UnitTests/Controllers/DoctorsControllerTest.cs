@@ -23,7 +23,7 @@ namespace TDSA_MedBDTest.UnitTests.Controllers {
     [Fact]
     public void Should_Return_Doctor_ID_If_Doctor_Created() {
       var rnd = new Random();
-      var id = rnd.Next(1, 11);
+      var id = Guid.NewGuid().ToString();
 
       var data = CreateDoctorViewModelFaker.Generate("1-DF", "53350519067");
 
@@ -32,7 +32,7 @@ namespace TDSA_MedBDTest.UnitTests.Controllers {
       var response = doctorsController.Create(doctorServices.Object, data);
 
       var actionResult = Assert.IsType<OkObjectResult>(response.Result);
-      var actionValue = Assert.IsType<int>(actionResult.Value);
+      var actionValue = Assert.IsType<string>(actionResult.Value);
 
       Assert.NotNull(actionResult);
       Assert.Equal(StatusCodes.Status200OK, actionResult.StatusCode);

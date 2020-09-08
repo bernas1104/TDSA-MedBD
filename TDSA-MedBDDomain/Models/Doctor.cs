@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TDSA_MedBDDomain.Models {
   public class Doctor {
-    public int Id { get; set; }
+    public string Id { get; set; }
     public string Fullname { get; set; }
     public string Cpf { get; set; }
     public string Crm { get; set; }
