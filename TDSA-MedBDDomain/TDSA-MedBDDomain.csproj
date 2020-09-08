@@ -5,4 +5,8 @@
     <RootNamespace>TDSA_MedBDDomain</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.2.0" />
+  </ItemGroup>
+
 </Project>
