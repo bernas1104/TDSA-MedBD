@@ -1,7 +1,7 @@
 using Bogus;
-using TDSAMedBDAPI.ViewModels;
+using TDSA_MedBDAPI.ViewModels;
 
-namespace TDSAMedBDTest.Bogus.ViewModels {
+namespace TDSA_MedBDTest.Bogus.ViewModels {
   public static class CreateDoctorViewModelFaker {
     public static CreateDoctorViewModel Generate(string crm, string cpf) {
       var viewModel = new Faker<CreateDoctorViewModel>()

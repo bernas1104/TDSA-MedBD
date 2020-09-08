@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace TDSAMedBDAPI.ViewModels {
+namespace TDSA_MedBDAPI.ViewModels {
   public class CreateDoctorViewModel {
     public string Fullname { get; set; }
     public string Cpf { get; set; }

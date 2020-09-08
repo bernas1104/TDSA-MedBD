@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using TDSAMedBDAPI.Services.Interfaces;
-using TDSAMedBDAPI.ViewModels;
+using TDSA_MedBDAPI.Services.Interfaces;
+using TDSA_MedBDAPI.ViewModels;
 
-namespace TDSAMedBDAPI.Controllers {
+namespace TDSA_MedBDAPI.Controllers {
   [ApiController]
   [Route("medico")]
   [Produces("application/json")]

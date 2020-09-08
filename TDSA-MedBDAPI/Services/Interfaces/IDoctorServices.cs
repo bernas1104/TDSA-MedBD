@@ -1,6 +1,6 @@
-using TDSAMedBDAPI.ViewModels;
+using TDSA_MedBDAPI.ViewModels;
 
-namespace TDSAMedBDAPI.Services.Interfaces {
+namespace TDSA_MedBDAPI.Services.Interfaces {
   public interface IDoctorServices {
     public int RegisterDoctor(CreateDoctorViewModel doctor);
   }

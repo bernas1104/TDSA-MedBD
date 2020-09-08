@@ -1,11 +1,13 @@
+using AutoMapper;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TDSA_MedBDAPI.Configurations;
+using TDSA_MedBDAPI.Middlewares;
 using TDSA_MedBDInfra.Context;
 
 namespace TDSA_MedBDAPI {
@@ -33,6 +35,9 @@ namespace TDSA_MedBDAPI {
           opt.RegisterValidatorsFromAssemblyContaining<Startup>();
         }
       );
+
+      services.ResolveDependencies();
+      services.AddAutoMapper(typeof(Startup));
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
@@ -41,6 +46,8 @@ namespace TDSA_MedBDAPI {
       }
 
       app.UseRouting();
+
+      app.UseMiddleware<ExceptionMiddleware>();
 
       app.UseEndpoints(endpoints => {
         endpoints.MapControllers();

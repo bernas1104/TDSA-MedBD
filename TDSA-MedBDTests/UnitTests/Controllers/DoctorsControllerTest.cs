@@ -2,12 +2,12 @@ using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using TDSAMedBDAPI.Controllers;
-using TDSAMedBDAPI.Services.Interfaces;
-using TDSAMedBDTest.Bogus.ViewModels;
+using TDSA_MedBDAPI.Controllers;
+using TDSA_MedBDAPI.Services.Interfaces;
+using TDSA_MedBDTest.Bogus.ViewModels;
 using Xunit;
 
-namespace TDSAMedBDTest.UnitTests {
+namespace TDSA_MedBDTest.UnitTests.Controllers {
   public class DoctorsControllerTest {
     private readonly Mock<IDoctorServices> doctorServices;
     private readonly DoctorsController doctorsController;
