@@ -30,5 +30,12 @@ namespace TDSA_MedBDAPI.Controllers {
       var doctor_id = services.RegisterDoctor(doctor);
       return Ok(doctor_id);
     }
+
+    [HttpDelete]
+    [Route("{id:int}")]
+    public ActionResult Delete([FromServices] IDoctorServices services, int id) {
+      var deletedDoctor = services.DeleteDoctor(id);
+      return NoContent();
+    }
   }
 }

@@ -71,6 +71,8 @@ namespace TDSA_MedBDTest.IntegrationTests {
           return await request.Client.GetAsync(request.HttpRoute);
         case 2: // Post
           return await request.Client.PostAsync(request.HttpRoute, json);
+        case 5: // Delete
+          return await request.Client.DeleteAsync(request.HttpRoute);
         default:
           throw new Exception("HttpAction não cadastrada");
       }

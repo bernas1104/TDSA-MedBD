@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using AutoMapper;
 using FluentValidation.Results;
@@ -58,6 +59,22 @@ namespace TDSA_MedBDAPI.Services {
       doctorsRepository.Save();
 
       return model.Id;
+    }
+
+    public int DeleteDoctor(int id) {
+      var doctor = doctorsRepository.FindById(id);
+      if (doctor == null)
+        throw new AppException("Médico não cadastrado", 404, null);
+
+      if (doctor.DeletedAt != null)
+        throw new AppException("Médico já foi deletado", 400, null);
+
+      doctor.DeletedAt = DateTime.Now;
+
+      doctorsRepository.Update(doctor);
+      doctorsRepository.Save();
+
+      return doctor.Id;
     }
 
     private void HandleModelValidationError(IList<ValidationFailure> errors) {

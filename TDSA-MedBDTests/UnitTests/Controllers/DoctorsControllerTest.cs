@@ -73,5 +73,20 @@ namespace TDSA_MedBDTest.UnitTests.Controllers {
       Assert.Equal(StatusCodes.Status200OK, actionResult.StatusCode);
       Assert.Equal(rndNumber, actionValue.ToList().Count);
     }
+
+    [Fact]
+    public void Should_Return_Nothing_If_Doctor_Deleted() {
+      var rnd = new Random();
+      var rndNumber = rnd.Next(1, 11);
+
+      doctorServices.Setup(x => x.DeleteDoctor(rndNumber)).Returns(rndNumber);
+
+      var response = doctorsController.Delete(doctorServices.Object, rndNumber);
+
+      var actionResult = Assert.IsType<NoContentResult>(response);
+
+      Assert.NotNull(actionResult);
+      Assert.Equal(StatusCodes.Status204NoContent, actionResult.StatusCode);
+    }
   }
 }

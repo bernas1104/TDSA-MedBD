@@ -1,9 +1,6 @@
-using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using TDSA_MedBDAPI;
-using TDSA_MedBDAPI.ViewModels;
-using TDSA_MedBDTest.Bogus.ViewModels;
 using TDSA_MedBDTest.IntegrationTests.DTOs;
 using Xunit;
 
