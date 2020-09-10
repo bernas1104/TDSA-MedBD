@@ -11,7 +11,10 @@ namespace TDSA_MedBDInfra.Repositories {
     public DoctorsRepository(TDSAMedBDContext context) : base(context) {}
 
     public Doctor FindById(int id) {
-      return DbSet.AsNoTracking().FirstOrDefault(x => x.Id == id);
+      return DbSet.AsNoTracking()
+        .Include(x => x.DoctorSpecialties)
+        .ThenInclude(x => x.Specialty)
+        .FirstOrDefault(x => x.Id == id);
     }
 
     public Doctor FindByCpf(string cpf) {
