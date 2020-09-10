@@ -88,5 +88,41 @@ namespace TDSA_MedBDTest.UnitTests.Controllers {
       Assert.NotNull(actionResult);
       Assert.Equal(StatusCodes.Status204NoContent, actionResult.StatusCode);
     }
+
+    [Fact]
+    public void Should_Return_List_Of_Doctors_By_Specific_Specialty() {
+      var rnd = new Random();
+      var quantity = rnd.Next(1, 5);
+
+      doctorServices.Setup(x => x.ListDoctorsBySpecialty("lorem"))
+        .Returns(DoctorViewModelFaker.Generate(quantity));
+
+      var response = doctorsController.IndexBySpecialty(
+        doctorServices.Object,
+        "lorem"
+      );
+
+      var actionResult = Assert.IsType<OkObjectResult>(response.Result);
+      var actionValue = Assert.IsType<List<DoctorViewModel>>(actionResult.Value);
+
+      Assert.NotNull(actionResult);
+      Assert.Equal(quantity, actionValue.Count);
+    }
+
+    [Fact]
+    public void Should_Return_No_Content_If_No_Doctors_Of_Specialty_Are_Found() {
+      doctorServices.Setup(x => x.ListDoctorsBySpecialty("lorem"))
+        .Returns(DoctorViewModelFaker.Generate(0));
+
+      var response = doctorsController.IndexBySpecialty(
+        doctorServices.Object,
+        "lorem"
+      );
+
+      var actionResult = Assert.IsType<NoContentResult>(response.Result);
+
+      Assert.NotNull(actionResult);
+      Assert.Equal(StatusCodes.Status204NoContent, actionResult.StatusCode);
+    }
   }
 }
