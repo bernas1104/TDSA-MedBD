@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using TDSA_MedBDDomain.Interfaces.Repositories;
@@ -10,7 +11,13 @@ namespace TDSA_MedBDInfra.Repositories {
     public SpecialtiesRepository(TDSAMedBDContext context) : base(context) {}
 
     public Specialty FindByName(string name) {
-      return DbSet.AsNoTracking().FirstOrDefault(x => x.Name == name);
+      return DbSet.AsNoTracking().FirstOrDefault(
+        x => x.Name.ToLower() == name.ToLower()
+      );
+    }
+
+    public IList<Specialty> FindAll() {
+      return DbSet.AsNoTracking().ToList();
     }
   }
 }

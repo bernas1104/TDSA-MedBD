@@ -24,6 +24,10 @@ namespace TDSA_MedBDTest.IntegrationTests.Utilities {
         new Specialty {
           Id = 3,
           Name = "Psiquiatra"
+        },
+        new Specialty {
+          Id = 4,
+          Name = "Ginecologista"
         }
       );
 

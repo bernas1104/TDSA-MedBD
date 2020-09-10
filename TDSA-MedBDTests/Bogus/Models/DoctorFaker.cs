@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Bogus;
 using TDSA_MedBDAPI.ViewModels;
 using TDSA_MedBDDomain.Models;
@@ -20,6 +21,16 @@ namespace TDSA_MedBDTest.Bogus.Models {
         .RuleFor(x => x.Crm, () => crm);
 
       return doctor.Generate();
+    }
+
+    public static IList<Doctor> Generate(int quantity) {
+      var doctors = new Faker<Doctor>()
+        .RuleFor(x => x.Id, (f) => f.Random.Int(1, 10))
+        .RuleFor(x => x.Fullname, (f) => f.Person.FullName)
+        .RuleFor(x => x.Cpf, () => "cpf")
+        .RuleFor(x => x.Crm, () => "crm");
+
+      return doctors.Generate(quantity);
     }
   }
 }
