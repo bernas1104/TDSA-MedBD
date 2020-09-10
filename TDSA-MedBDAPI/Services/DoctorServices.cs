@@ -13,20 +13,41 @@ namespace TDSA_MedBDAPI.Services {
   public class DoctorServices : IDoctorServices {
     private readonly IDoctorsRepository doctorsRepository;
     private readonly ISpecialtiesRepository specialtiesRepository;
+    private readonly IDoctorSpecialtiesRepository doctorSpecialtiesRepository;
     private readonly IMapper mapper;
 
     public DoctorServices(
       IDoctorsRepository doctorsRepository,
       ISpecialtiesRepository specialtiesRepository,
+      IDoctorSpecialtiesRepository doctorSpecialtiesRepository,
       IMapper mapper
     ) {
       this.doctorsRepository = doctorsRepository;
       this.specialtiesRepository = specialtiesRepository;
+      this.doctorSpecialtiesRepository = doctorSpecialtiesRepository;
       this.mapper = mapper;
     }
 
     public IList<DoctorViewModel> ListDoctors() {
       return mapper.Map<IList<DoctorViewModel>>(doctorsRepository.FindAll());
+    }
+
+    public IList<DoctorViewModel> ListDoctorsBySpecialty(string specialtyName) {
+      var specialty = specialtiesRepository.FindByName(specialtyName);
+      if (specialty == null)
+        throw new AppException("Especialidade não encontrada", 404, null);
+
+      var doctorSpecialties = doctorSpecialtiesRepository.FindAllBySpecialtyId(
+        specialty.Id
+      );
+
+      IList<Doctor> doctors = new List<Doctor>();
+      foreach(var doctorSpecialty in doctorSpecialties)
+        doctors.Add(doctorsRepository.FindById(doctorSpecialty.DoctorId));
+
+      var x = mapper.Map<IList<DoctorViewModel>>(doctors);
+
+      return mapper.Map<IList<DoctorViewModel>>(doctors);
     }
 
     public int RegisterDoctor(CreateDoctorViewModel doctor) {

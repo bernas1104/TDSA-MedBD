@@ -13,6 +13,7 @@ namespace TDSA_MedBDAPI.Configurations {
     ) {
       services.AddScoped<IDoctorsRepository, DoctorsRepository>();
       services.AddScoped<ISpecialtiesRepository, SpecialtiesRepository>();
+      services.AddScoped<IDoctorSpecialtiesRepository, DoctorSpecialtiesRepository>();
 
       services.AddTransient<IDoctorServices, DoctorServices>();
 

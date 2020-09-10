@@ -14,16 +14,19 @@ namespace TDSA_MedBDTest.UnitTests.Services {
   public class RegisterDoctorServiceTest {
     private readonly Mock<IDoctorsRepository> doctorsRepository;
     private readonly Mock<ISpecialtiesRepository> specialtiesRepository;
+    private readonly Mock<IDoctorSpecialtiesRepository> doctorSpecialtiesRepository;
     private readonly Mock<IMapper> mapper;
     private readonly IDoctorServices doctorServices;
 
     public RegisterDoctorServiceTest() {
       doctorsRepository = new Mock<IDoctorsRepository>();
       specialtiesRepository = new Mock<ISpecialtiesRepository>();
+      doctorSpecialtiesRepository = new Mock<IDoctorSpecialtiesRepository>();
       mapper = new Mock<IMapper>();
       doctorServices = new DoctorServices(
         doctorsRepository.Object,
         specialtiesRepository.Object,
+        doctorSpecialtiesRepository.Object,
         mapper.Object
       );
     }
